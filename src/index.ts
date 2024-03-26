@@ -45,5 +45,34 @@ console.log(func(4,3));
 
 
 
+interface Product {
+    name: string;
+    stock: number;
+    price: number;
+    photo: string;
+
+}
+
+type getDataType = (product: Product) => void;
+const getData:getDataType = (product) => {
+    console.log(product);
+}
+
+const productOne = {
+    name: "macbook",
+    stock: 45,
+    price: 99999,
+    photo: "sample-photo"
+};
+
+getData({name: "macbook",
+stock: 45,
+price: 99999,
+photo: "sample-photo"})
+
+
+
+
+
 
 
